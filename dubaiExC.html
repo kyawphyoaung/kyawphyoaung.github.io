@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Calculator</title>
+    <link rel="stylesheet" href="dubai_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-bar-top">
+            
+            <div class="menu-icon">
+                <a href="index.html"><img src="/images/back-arrow-icon.svg" alt="Menu"></a>
+            </div>
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <p>Currency Calculator by KPA</p>
+            </div>
+        </div>
+
+        <h1>Currency Exchange Calculator</h1>
+
+        <div class="exchange-section">
+            <h2>Exchange Rate from MMK to AED</h2>
+            <button id="insert-100000-mmk" class="insertBtn"> 100,000 MMK</button>
+            <div class="exchange-rate">
+                <input type="number" id="mmk-amount" class="exchange-input" placeholder="MMK Amount"> =>
+                <input type="number" id="aed-amount" class="exchange-input" placeholder="AED Amount">
+            </div>
+            <br>
+            <div>1 AED => <span id="mmk-aed-rate" class="auto-generated">[auto]</span> MMK</div>
+        </div>
+        <hr>
+        <div class="exchange-section">
+            <h2>Exchange Rate from USD to AED</h2>
+            <button id="insert-200-usd" class="insertBtn"> 200 USD</button>
+            <div class="exchange-rate">
+                <input type="number" id="usd-amount" class="exchange-input" placeholder="USD Amount"> =>
+                <input type="number" id="aed-from-usd" class="exchange-input" placeholder="AED Amount">
+            </div>
+        </div>
+        <div>1 USD => <input type="number" id="usd-aed-rate" class="auto-generated" placeholder="AED"> AED
+        </div>
+        <div class="calBtn">
+            <button id="usd_aed_calculate"> Calculate </button>
+        </div>
+        <hr>
+        <div class="exchange-section">
+            <h2>Exchange Rate from USD to MMK</h2>
+            <button id="insert-200-usd-mmk" class="insertBtn"> 200 USD</button>
+            <div class="exchange-rate">
+                <input type="number" id="usd-amount-mmk" class="exchange-input" placeholder="USD Amount"> =>
+                <input type="number" id="mmk-amount-mmk" class="exchange-input" placeholder="MMK Amount">
+            </div>
+        </div>
+        <div>1 USD => <input type="number" id="usd-mmk-rate-mmk" class="auto-generated" placeholder="MMK"> MMK
+        </div>
+        <br>
+        <div class="calBtn">
+            <button id="usd_mmk_calculate"> Calculate </button>
+        </div>
+        <hr>
+        <h2>Exchange rate from AED to MMK</h2>
+        <p>This rate is calculated depend on both USD-AED and USD-MMK.</p>
+        <div class="aed_to_mmk_rate">
+
+            <div>1 AED => <input type="number" id="aed-mmk-rate-mmk" class="auto-generated" placeholder="MMK"> MMK
+            </div>
+            <div class="calBtn">
+                <button id="aed_mmk_calculate"> Calculate </button>
+            </div>
+        </div>
+        <!-- 
+        <div class="comparison">
+            <h2>Comparison</h2>
+            <p><span id="comparison-rate" class="auto-generated">[auto]</span> MMK => 1 AED</p>
+        </div> -->
+    </div>
+    <script src="dubai_script.js"></script>
+</body>
+
+</html>
